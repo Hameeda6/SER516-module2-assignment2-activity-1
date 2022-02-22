@@ -13,8 +13,6 @@ def encrypt(text,s):
       elif (char.islower()):
          result += chr((ord(char) + s - 97) % 26 + 97)
          
-      else: 
-          result+=char
 
     return result
 #check the above function
