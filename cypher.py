@@ -10,8 +10,11 @@ def encrypt(text,s):
       if (char.isupper()):
          result += chr((ord(char) + s-65) % 26 + 65)
       # Encrypt lowercase characters in plain text
-      else:
+      elif (char.islower()):
          result += chr((ord(char) + s - 97) % 26 + 97)
+         
+      else: 
+          result+=char
 
     return result
 #check the above function
