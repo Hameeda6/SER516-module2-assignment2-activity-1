@@ -12,7 +12,8 @@ def encrypt(text,s):
       # Encrypt lowercase characters in plain text
       elif (char.islower()):
          result += chr((ord(char) + s - 97) % 26 + 97)
-         
+      else:
+          result+=char  
 
     return result
 #check the above function
@@ -20,7 +21,7 @@ def encrypt(text,s):
 
 
 LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-txt = "CEASER MAN is bad"
+txt = "Test CODE"
 a = 5
 num = 26-a
 
